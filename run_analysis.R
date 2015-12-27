@@ -42,7 +42,7 @@ mean_feature_index<-grep("-mean\\(",AllFeatures[,2])
 std_feature_index<-grep("-std\\(",AllFeatures[,2])
 
 #Combining the indices for SD and mean
-mean_std_features_index=c(mean_feature_index,std_feature_index)
+mean_std_features_index<-c(mean_feature_index,std_feature_index)
 mean_std_features_index<-sort(mean_std_features_index)
 
 #Retaining only values  which has computations related to std deviation and mean
